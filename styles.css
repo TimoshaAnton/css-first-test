@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+body {
+    background-color: rgb(160, 235, 170);
+    color: rgb(13, 37, 21);
+    font-size: 16px;
+    font-weight: 600; 
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+    /* или мы можем использовать всё это в формате одной строчки font: normal 16px 'Kdam Thmor Pro', sans-serif; */
+}
+
+.avatar {
+    width: 200px;
+    height: 280px;
+    border-radius: 29px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 05);
+}
+
+.info p { 
+    color: rgb(255, 0, 179) ;
+    margin: 0;
+    font-style: italic ;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+/* Box model CSS */
+
+.container {
+
+    max-width: 70%;
+    margin: auto;
+
+}
+
+.social {
+    background-color: rgb(255, 191, 0);
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px  ;
+    border-top: 6px solid rgb(17, 5, 255);
+    border-bottom: 6px solid rgb(17, 5, 255);
+    border-left: solid 10px rgb(0, 255, 234);
+    border-right:  solid 10px rgb(0, 255, 234);
+
+    border-bottom-style: dotted;
+    border-top-width: 15px  ;
+}
+
+.box-model > div {
+    background: black;
+    height: 100px;
+    width: 25%;
+    float: left;
+    border: 4px solid red;
+    box-sizing: border-box;
+    margin-top: 50px
+
+    /* свойство border-sizing: border-box; позволяет этим квадратам уместиться в одной линии */
+}
+
+a {
+    color: rgb(77, 137, 18);
+    text-decoration: none;
+
+    /* стилизация ссылки */
+} 
+
+a:hover {
+      text-decoration: line-through;
+
+      /* работа с наведением курсора на ссылку */
+}
+
+a:active {
+    color: blue;
+
+    /* стилизация клика на ссылку  */
+}
+
+.card {
+    padding: 15px 20px;
+    background: rgb(85, 0, 255);
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+   
+.bg-hobbies {
+    background: linear-gradient(blue, pink);
+}
+
+.bg-work {
+    background-image: url(https://hr-portal.ru/files/mini/140036393_450475819664595_388831016570434416_n.jpg);
+     
+}
+
+.list {
+    padding: 0px 30px;
+
+    /* обращение к списку хобби. изменение отступа списка, изначально он 40пкс */
+}
+
+.list li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    color: rgb(0, 247, 255);
+    border-bottom: 2px solid black ;
+
+    /* стилизация элементов списка */
+}
+
+.table {
+    width: 100%;
+    border-color: black;
+    border-width: 6 px;
+    border-style: double;
+}
+
+.table td:nth-child(3) {
+    color: brown ;
+    background-color: rgb(0, 251, 255);
+}
+
+.table td:nth-child(even) {
+    background: greenyellow;
+}
+
+/* стилизация отдельных элементов таблицы  */
+
+.contact h2 {
+text-align: center;
+     
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    color: rgb(73, 50, 33);
+}
+
+.form-group input, .form-group textarea  {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid rgb(141, 0, 0);
+    padding: 15px 0px 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.btn {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 20px 10px;
+    border: none;
+    margin-top: 50px;
+    font-family: inherit;
+    cursor: crosshair;
+
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.box {
+    position: fixed;
+    top: 50%;
+}
